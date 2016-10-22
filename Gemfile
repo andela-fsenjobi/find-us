@@ -12,6 +12,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'indefinite_article'
 gem 'omniauth'
 gem 'omniauth-facebook', '1.4.0'
+gem 'geocoder'
 
 group :development, :test do
   gem 'byebug', platform: :mri

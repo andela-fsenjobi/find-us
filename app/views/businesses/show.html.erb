@@ -1,0 +1,80 @@
+<div class="container">
+  <div class="row">
+    <div class="col s12 center">
+      <h3>Our Business Page</h3>
+    </div>
+
+    <div class="row">
+      <div class="col m6 parallax-container center">
+        <div class="parallax"><%= image_tag "parallax1.png" %></div>
+        <h4> <%= @business.name %></h4>
+        <h5><%= @business.address %></h5>
+        <h5><%= @business.location %></h5>
+        <h5><%= @business.phone %></h5>
+        <h5>webtite.biz</h5>
+        <h5><%= @business.email %></h5>
+      </div>
+      <div class="col m6">
+        <p><%= @business.description %></p>
+        <ul class="collection with-header">
+        <li class="collection-header"><h6>Our Services</h6></li>
+        <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+        <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+        <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+        <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+        <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+        <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+        <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+        <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+      </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12 center">
+      <h3>Related Services</h3>
+    </div>
+
+    <div class="row">
+      <div class="col l4 m6 s12">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/office.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Card Title</span>
+            <p><a href="#">This is a link</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col l4 m6 s12">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/office.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Card Title</span>
+            <p><a href="#">This is a link</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col l4 m6 s12">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/office.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Card Title</span>
+            <p><a href="#">This is a link</a></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<p id="notice"><%= notice %></p>

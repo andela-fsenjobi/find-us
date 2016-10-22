@@ -6,9 +6,6 @@ const {width, height, scale} = Dimensions.get("window"),
     vmax = Math.max(vw, vh);
 
 export default StyleSheet.create({
-    "parallax-container": {
-        "height": 100 * vh
-    },
     "body": {
         "fontFamily": "'Raleway', sans-serif"
     },

@@ -1,0 +1,54 @@
+<%= form_for(business) do |f| %>
+  <% if business.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(business.errors.count, "error") %> prohibited this business from being saved:</h2>
+
+      <ul>
+      <% business.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="row">
+    <div class="input-field col m6">
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </div>
+
+    <div class="input-field col m6">
+      <%= f.collection_select :category, Category.all, :id, :name, placeholder: "Select a Category" %>
+    </div>
+
+    <div class="input-field col m12">
+      <%= f.label :description %>
+      <%= f.text_area :description, class: "materialize-textarea" %>
+    </div>
+
+    <div class="input-field col m6">
+      <%= f.label :location %>
+      <%= f.text_field :location %>
+    </div>
+
+    <div class="input-field col m6">
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+    </div>
+
+    <div class="input-field col m6">
+      <%= f.label :phone %>
+      <%= f.text_field :phone %>
+    </div>
+
+    <div class="input-field col m6">
+      <%= f.label :address %>
+      <%= f.text_field :address %>
+    </div>
+
+    <div class="input-field col m6">
+      <%= f.submit "Create Business", class:"btn" %>
+    </div>
+  </div>
+
+<% end %>

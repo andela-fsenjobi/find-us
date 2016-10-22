@@ -1,17 +1,151 @@
+<div class="parallax-container">
+  <div class="parallax"><%= image_tag "parallax1.png" %></div>
+  <div class="container">
+    <div class="row">
+     <form class="col s12" style="margin-top: 200px">
+       <div class="row">
+         <div class="input-field col s12">
+           <input placeholder="What would you like to search?" id="search-box" type="text" class="validate">
+         </div>
+       </div>
+     </form>
+   </div>
+  </div>
+</div>
+<div class="parallax-container">
+  <div class="parallax"><%= image_tag "parallax1.png" %></div>
+  <div class="container">
+    <div class="row">
+      <div class="col s12 center">
+        <h3>Meet Laundry Services in Lagos</h3>
+      </div>
+
+      <div class="col l4 m6 s12">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/office.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">This is a link</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col l4 m6 s12">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/office.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">This is a link</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col l4 m6 s12">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/office.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">This is a link</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col l4 m6 s12">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/office.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">This is a link</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col l4 m6 s12">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/office.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">This is a link</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col l4 m6 s12">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/office.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">This is a link</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="container">
   <div class="row">
-    <div class="col l3 m6 s12 right" style="color:white; margin-top:200px">
-      <h1 style="font-family: 'Arizonia', cursive;">Vogue</h1>
-      <p>Vogue is a social connecting platfom with your career in view</p>
+    <div class="col l4 m6 s12">
+      <h6>About Us</h6>
+      <p>
+        We love to make life easier for folks all over the world. And so we are unveiling our business directry for easy search and generation of customers
+      </p>
+    </div>
 
-      <div id="user-widget">
-        <% if current_user %>
-          Welcome <strong><%= current_user.name %></strong>!
-          <%= link_to "Sign out", signout_path, id: "sign_out" %>
-        <% else %>
-          <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
-        <% end %>
-      </div>
+    <div class="col l4 m6 s12">
+      <h6>How can you be a part?</h6>
+      <ul>
+        <li>We're hiring</li>
+        <li>Advertise on our platform</li>
+        <li>Enlist your business</li>
+        <li>Become an affiliate</li>
+      </ul>
+    </div>
+
+    <div class="col l4 m6 s12">
+      <h6>Contact us</h6>
+      <ul>
+        <li>hello@find-us.com</li>
+        <li>098308979878</li>
+        <li>Yaba, Lagos, Nigeria</li>
+        <li>with love from us</li>
+      </ul>
     </div>
   </div>
 </div>
