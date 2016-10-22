@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
+ @import "materialize";
+ @import 'https://fonts.googleapis.com/css?family=Arizonia';
+ @import 'https://fonts.googleapis.com/css?family=Raleway';
+ @import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+ body, p, a{
+   font-family: 'Raleway', sans-serif;
+ }
