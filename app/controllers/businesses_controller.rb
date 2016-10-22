@@ -62,13 +62,14 @@ class BusinessesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_business
-      @business = Business.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def business_params
-      params.require(:business).permit(:name, :description, :email, :phone, :address, :location, :user_id, :latitude, :longitude)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_business
+    @business = Business.find(params[:id])
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def business_params
+    params.require(:business).permit(:name, :description, :email, :phone, :address, :location, :user_id, :latitude, :longitude)
+  end
 end

@@ -1,21 +1,21 @@
 require 'rails_helper'
 
-RSpec.describe "businesses/show", type: :view do
+RSpec.describe 'businesses/show', type: :view do
   before(:each) do
     @business = assign(:business, Business.create!(
-      :name => "Name",
-      :description => "MyText",
-      :email => "Email",
-      :phone => "Phone",
-      :address => "Address",
-      :location => "Location",
-      :user => nil,
-      :latitude => 2.5,
-      :longitude => 3.5
+                                    name: 'Name',
+                                    description: 'MyText',
+                                    email: 'Email',
+                                    phone: 'Phone',
+                                    address: 'Address',
+                                    location: 'Location',
+                                    user: nil,
+                                    latitude: 2.5,
+                                    longitude: 3.5
     ))
   end
 
-  it "renders attributes in <p>" do
+  it 'renders attributes in <p>' do
     render
     expect(rendered).to match(/Name/)
     expect(rendered).to match(/MyText/)
