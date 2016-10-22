@@ -24,7 +24,7 @@ class BusinessesController < ApplicationController
   # POST /businesses
   # POST /businesses.json
   def create
-    @business = Business.new(business_params)
+    @business = current_user.businesses.new(business_params)
 
     respond_to do |format|
       if @business.save
@@ -70,6 +70,6 @@ class BusinessesController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def business_params
-    params.require(:business).permit(:name, :description, :email, :phone, :address, :location, :user_id, :latitude, :longitude)
+    params.require(:business).permit(:name, :description, :email, :phone, :address, :location, :category_id)
   end
 end
